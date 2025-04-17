@@ -9,7 +9,7 @@ this for nooob can't be use ida
 อย่าหวังเลยจะเก่งขึ้น อยู่แบบ กระจอกๆ ต่อไป
 ```
 #How To Use
-```bash
+```sh
 ./pid2 pkgname tg:arxmoder
 ```
 
