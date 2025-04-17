@@ -26,9 +26,9 @@ std::vector<std::pair<long, long>> get_modules(int pid, const char *module_name)
         // module_name
         if (fp) {
             while (fgets(line, sizeof(line), fp)) {
-                if (strstr(line, module_name)) 
-                   //&& strstr(line, "r-xp"))  //r-xp new line XA
-					{
+                if (strstr(line, module_name) && strstr(line, "r-xp"))  //r-xp new line XA
+             //   if (strstr(line, module_name)) all line
+            {
                     char *pch_start = strtok(line, "-"); //ช่องว่างระหว่าง line 123-129
                     char *pch_end = strtok(NULL, " ");
                     long start = strtoul(pch_start, NULL, 16); // อ่าน Hex Start
